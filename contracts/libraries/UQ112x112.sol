@@ -5,6 +5,9 @@ pragma solidity =0.5.16;
 // range: [0, 2**112 - 1]
 // resolution: 1 / 2**112
 
+/**
+    @dev 为什么如此设计而且留了32bit请参考白皮书
+ */
 library UQ112x112 {
     uint224 constant Q112 = 2**112;
 
